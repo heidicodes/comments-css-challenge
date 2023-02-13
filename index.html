@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>CSS Challenge | Interactive comments section</title>
+    <title>CSS Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -106,7 +106,7 @@
           </div>
         </span>
         <div class="headerClass">
-        <img src="./images/avatars/image-maxblagun.png" alt="profile picture" />
+        <img class="profilePic" src="./images/avatars/image-maxblagun.png" alt="profile picture" />
       <div class="username">maxblagun</div>
       <div class="timestamp">2 weeks ago</div>
         </div>
@@ -151,11 +151,11 @@
             </svg>
           </div>
         </span>
-        <div>
+        <div class="headerClass">
           <img class="profilePic" src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-        </div>
         <div class="username">ramsesmiron</div>
         <div class="timestamp">1 week ago</div>
+      </div>
         <div class="replyClass">
           <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -166,7 +166,7 @@
           Reply
         </div>
         <p class="commentText">
-          @maxblagun If you're still new, I'd recommend focusing on the
+          <span>@maxblagun</span> If you're still new, I'd recommend focusing on the
           fundamentals of HTML, CSS, and JS before considering React. It's very
           tempting to jump ahead but lay a solid foundation first.
         </p>
@@ -197,20 +197,14 @@
             </svg>
           </div>
         </span>
+        <div class="headerClass">
         <img class="profilePic" src="./images/avatars/image-juliusomo.png" alt="profile" />
         <div class="username">juliusomo</div>
+          <div class="youLabel">you</div>
           <div class="timestamp">2 days ago</div>
-        <!-- <div class="replyClass">
-          <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
-              fill="#5357B6"
-            />
-          </svg>
-          Reply
-        </div> -->
+        </div>
         <p class="commentText">
-          @ramsesmiron I couldn't agree more with this. Everything moves so fast
+          <span>@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast
           and it always seems like everyone knows the newest library/framework.
           But the fundamentals are what stay constant.
         </p>
@@ -237,12 +231,12 @@
     <!-- end responseCommentClass -->
     <div class="newComment">
       <img
-        class="profilePic"
+        class="profilePicCurrentUser"
         src="./images/avatars/image-juliusomo.png"
         alt="profile"
       />
       <div class="textBox" contenteditable="true">Add a Comment...</div>
-      <button class="sendBtn">Send</button>
+      <button class="sendBtn">SEND</button>
     </div>
 
     <div class="attribution">

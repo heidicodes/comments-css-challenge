@@ -1,6 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: repeat(5, 3fr);
+    grid-template: repeat(5, 3fr);
+    /* grid-template-columns: repeat(5, 3fr); */
     margin: 10% 30% 10% 15%;
     background-color: hsl(228, 33%, 97%);
     font-family: 'Rubik', sans-serif;
@@ -46,7 +47,6 @@ body {
 .arrow {
     color:hsl(238, 40%, 52%);
     padding-top: .5em;
-    /* margin-bottom: -.5em; */
 }
 
 .headerClass{
@@ -88,7 +88,7 @@ body {
 .editClass{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-column: 11/12;
     grid-row: 1;
     margin-top: 1em;
@@ -101,28 +101,53 @@ body {
 
 .deleteClass{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-column: 8/12;
+    grid-column: 9/12;
     grid-row: 1;
+    flex-direction: row;
+    justify-content: space-around;
     margin-top: 1em;
     align-self: center;
     align-items: center;
-    width: 4em;
+    width: 5em;
     color: hsl(358, 79%, 66%);
     font-weight: 450;
 }
 .username {
+    font-weight: 450;
     padding-left: 1em;
-    padding-right:1em;
+    padding-right: 1em;
 }
 
 .profilePic{
     height: 2.5em; 
 }
 
+.profilePicCurrentUser{
+    height: 3em;
+}
+
+.youLabel {
+    display: grid;
+    justify-self: left;
+    height: 1.3em;
+    width: 2.5em;
+    background-color: hsl(238, 40%, 52%);
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: .25;
+    margin-left: -.5em;
+
+}
+
 .timestamp{
+    margin-left: 1em;
+    padding-left: .5em;
     color:hsl(211, 10%, 45%);
+}
+
+span {
+    color:hsl(238, 40%, 52%);
+    font-weight: 450;
 }
 
 .newComment{
@@ -134,16 +159,16 @@ body {
     border-radius: .5em;
     margin-top: 1em;
     margin-bottom: 1.5em;
-    padding: 3em;
+    padding: 1.5em;
 }
 
 .textBox{
-    height: 6em;
+    height: 3em;
     width: 30em;
     border-radius: .5em;
     border: solid hsl(223, 19%, 93%);
     color: hsl(211, 10%, 45%); 
-    padding: 1em 1em 2em 1em;
+    padding: 1em 1em 1em 1em;
 }
 
 .sendBtn{
@@ -152,13 +177,13 @@ body {
     border-radius: .5em;
     background-color: hsl(238, 40%, 52%);
     color:hsl(0, 0%, 100%);
-    
+    font-size: 1em;
 }
 
 .spacer{
     grid-column: 1/2;
     color:hsl(228, 33%, 97%);
     border-right: .15em solid hsl(223, 19%, 93%);
-    width: 1.15em;
-    margin-left: 5em;
+    width: 1em;
+    margin-left: 3.5em;
 }
