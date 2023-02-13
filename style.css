@@ -2,8 +2,8 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 3fr);
     margin: 10% 30% 10% 15%;
-    background-color: hsl(223, 19%, 93%);
-    font-family: "Rubik";
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik', sans-serif;
 }
 
 .contents {
@@ -13,13 +13,16 @@ body {
 
 .commentClass{
     grid-column: 1/12;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     margin: 1em;
     border-radius: .5em;
 }
 
 .commentResponseClass {
-    grid-column: 3/12;
+    grid-column: 2/12;
+    background-color: hsl(0, 0%, 100%);
+    margin: 1em;
+    border-radius: .5em;
 }
 
 .likeCount{
@@ -27,7 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: hsl(223, 19%, 93%);
+    background-color: hsl(228, 33%, 97%);
     margin-top: 1.5em;
     margin-bottom: 1em;
     margin-left: 1.5em;
@@ -80,9 +83,35 @@ body {
     width: 4em;
     color: hsl(238, 40%, 52%);
     font-weight: 450;
-    
 }
 
+.editClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 11/12;
+    grid-row: 1;
+    margin-top: 1em;
+    align-self: center;
+    align-items: center;
+    width: 4em;
+    color: hsl(238, 40%, 52%);
+    font-weight: 450;
+}
+
+.deleteClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 8/12;
+    grid-row: 1;
+    margin-top: 1em;
+    align-self: center;
+    align-items: center;
+    width: 4em;
+    color: hsl(358, 79%, 66%);
+    font-weight: 450;
+}
 .username {
     padding-left: 1em;
     padding-right:1em;
@@ -98,10 +127,10 @@ body {
 
 .newComment{
     display: flex;
-    grid-column:1/12;
+    grid-column: 1/12;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     border-radius: .5em;
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -112,15 +141,18 @@ body {
     height: 6em;
     width: 30em;
     border-radius: .5em;
-    border: solid hsl(228, 33%, 97%);
-    /* padding-top: 2em;
-    padding-bottom: 2em; */
+    border: solid hsl(223, 19%, 93%);
+    color: hsl(211, 10%, 45%); 
+    padding: 1em 1em 2em 1em;
 }
 
 .sendBtn{
-    height: 4em;
+    height: 3em;
     width: 6em;
     border-radius: .5em;
+    background-color: hsl(238, 40%, 52%);
+    color:hsl(0, 0%, 100%);
+    
 }
 
 .spacer{
